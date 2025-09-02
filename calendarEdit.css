@@ -1,0 +1,60 @@
+#content {
+    width: 500px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    padding: 10px;
+}
+
+#ok-button {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #d0d0d0;
+    border: 1px solid #606060;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}  
+
+#ok-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* カレンダーを7列のグリッドにする */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.day {
+    border: 1px solid #ccc;
+    min-height: 60px;
+    padding: 4px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.other-month {
+    background: #f5f5f5;
+    color: #aaa;
+}
+.sun {
+    color: red;
+}
+.sat {
+    color: blue;
+}
+.holiday {
+    background: #ffeaea;
+}
+.holiday-text {
+    font-size: 12px;
+    color: #d00;
+}
+.schedule-text {
+    font-size: 12px;
+    color: #333;
+}

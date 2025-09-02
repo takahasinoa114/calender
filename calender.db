@@ -1,0 +1,4 @@
+CREATE TABLE schedule (
+    date TEXT PRIMARY KEY,
+    title TEXT
+);
