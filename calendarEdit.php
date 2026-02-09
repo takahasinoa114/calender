@@ -19,20 +19,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="calendarEdit.css">
+        <link rel="stylesheet" href="calendarEdit.css?v=<?php echo time(); ?>">
         <script src="jquery-3.7.1.js"></script>
     </head>
-    <body>    
-        <center>
-            <input type="hidden" id="id" value="<?php print $id; ?>">
-            <h2><?php print $year . '年' . intval($month) . '月' . intval($day) . '日'; ?></h2>
-            <textarea id="content"><?php
-                $content = getSchedule($id);
-                print str_replace('<br>', "\n", $content);
-            ?></textarea>
-        <br><br>
+    <body>
+        <input type="hidden" id="id" value="<?php print $id; ?>">
+        <h2><?php print $year . '年' . intval($month) . '月' . intval($day) . '日'; ?></h2>
+        <textarea id="content"><?php
+            $content = getSchedule($id);
+            print str_replace('<br>', "\n", $content);
+        ?></textarea>
         <div id="ok-button">OK</div>
-        </center>
         <script>
         $(function(){
             $('#ok-button').on('click', function(){

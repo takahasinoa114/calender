@@ -54,7 +54,7 @@ function draw( holiday, schedule ){
     title += '<span id="next-month">></span>';
     $('#title').html(title);
 
-    // ★曜日ヘッダーを追加
+    
     const weekDays = ['日', '月', '火', '水', '木', '金', '土'];
     let html = '';
     for (let i = 0; i < 7; i++) {
@@ -104,7 +104,6 @@ function draw( holiday, schedule ){
 
     $('#calendar').html(html);
 
-    // イベントハンドラの設定
     $('.day').on('click', function () {
         windowOpen($(this).prop('id'));
     });
